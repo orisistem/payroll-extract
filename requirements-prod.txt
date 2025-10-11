@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+prisma-client-py
+aiosqlite
+pydantic
+python-dotenv
+loguru
