@@ -114,17 +114,6 @@ def main():
         print("\n📋 Sample Employees (top 5 by gross salary):")
         print("-" * 70)
 
-        payroll.sort_by_gross_descending()
-        for i, employee in enumerate(payroll.employees[:5], 1):
-            print(f"\n{i}. {employee.name} (ID: {employee.id})")
-            print(f"   Position:    {employee.position}")
-            print(f"   Gross:       $ {employee.gross_value.to_float():,.2f}")
-            print(f"   Net:         $ {employee.net_value.to_float():,.2f}")
-            print(
-                f"   Deductions:  $ {employee.calculate_deductions().to_float():,.2f} ({employee.get_deduction_percentage():.1f}%)"
-            )
-            print(f"   Page:        {employee.page}")
-
         # Export options
         print("\n" + "=" * 70)
         print("📤 EXPORT OPTIONS")
