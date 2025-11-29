@@ -1,0 +1,43 @@
+[project]
+name = "payroll-extract"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Anderson Oliveira",email = "anderson.oliveira@orisistem.com.br"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "fastapi (==0.122.0)",
+    "uvicorn (==0.38.0)",
+    "loguru (==0.7.3)",
+    "prisma (==0.15.0)",
+    "pydantic-settings (==2.12.0)",
+    "annotated-doc (==0.0.4)",
+    "annotated-types (==0.7.0)",
+    "anyio (==4.12.0)",
+    "certifi (==2025.11.12)",
+    "click (==8.3.1)",
+    "h11 (==0.16.0)",
+    "httpcore (==1.0.9)",
+    "httpx (==0.28.1)",
+    "idna (==3.11)",
+    "jinja2 (==3.1.6)",
+    "markupsafe (==3.0.3)",
+    "nodeenv (==1.9.1)",
+    "pydantic (==2.12.5)",
+    "pydantic-core (==2.41.5)",
+    "python-dotenv (==1.2.1)",
+    "starlette (==0.50.0)",
+    "tomlkit (==0.13.3)",
+    "typing-inspection (==0.4.2)",
+    "typing-extensions (==4.15.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
